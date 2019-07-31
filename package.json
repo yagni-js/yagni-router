@@ -1,22 +1,23 @@
 {
   "name": "@yagni-js/yagni-router",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "yagni-js router",
   "main": "dist/yagni-router.cjs.js",
   "module": "dist/yagni-router.esm.js",
   "files": [
+    "UNLICENSE",
     "dist"
   ],
   "scripts": {
     "test": "mocha",
-    "pretest": "npm run build",
+    "pretest": "yarn run build",
     "build": "rollup -c",
     "prebuild": "rm -rf dist/*",
-    "prepublishOnly": "npm test"
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ysegorov/yagni-router.git"
+    "url": "git+https://github.com/yagni-js/yagni-router.git"
   },
   "keywords": [
     "frontend",
@@ -28,23 +29,21 @@
   "author": "Yuri Egorov <ysegorov@gmail.com> (https://ysegorov.github.io/)",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/ysegorov/yagni-router/issues"
+    "url": "https://github.com/yagni-js/yagni-router/issues"
   },
-  "homepage": "https://github.com/ysegorov/yagni-router#readme",
+  "homepage": "https://github.com/yagni-js/yagni-router#readme",
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^4.15.0",
+    "@yagni-js/yagni": "^0.7.1",
+    "chai": "^4.2.0",
+    "eslint": "^6.1.0",
     "eslint-plugin-better": "^0.1.5",
     "eslint-plugin-fp": "^2.3.0",
-    "eslint-plugin-import": "^2.8.0",
-    "mocha": "^4.1.0",
-    "rollup": "^0.53.4",
-    "rollup-plugin-buble": "^0.18.0",
-    "rollup-plugin-commonjs": "^8.3.0",
-    "rollup-plugin-eslint": "^4.0.0",
-    "rollup-plugin-node-resolve": "^3.0.2"
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0",
+    "rollup": "^1.17.0",
+    "rollup-plugin-eslint": "^7.0.0"
   },
   "peerDependencies": {
-    "@yagni-js/yagni": "^0.3.0"
+    "@yagni-js/yagni": "^0.7.1"
   }
 }
